@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-rq0(2(r(u)%7-6n=^_pqqm21&esiw%q35quw0$^y61h=nap^9+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["anishbade.pythonanywhere.com"]
 
 
 # Application definition
@@ -141,9 +141,8 @@ SPECTACULAR_SETTINGS = {
 }
 
 
-CELERY_BROKER_URL='amqps://slwsdgri:XjOvE-rbYM5JMCHqJeH0_3hF_VEOy34_@lionfish.rmq.cloudamqp.com/slwsdgri'
-CELERY_RESULT_BACKEND = 'rpc://'
-
+CELERY_BROKER_URL = "amqps://slwsdgri:XjOvE-rbYM5JMCHqJeH0_3hF_VEOy34_@lionfish.rmq.cloudamqp.com/slwsdgri"
+CELERY_RESULT_BACKEND = "rpc://"
 
 
 CORS_ALLOWED_ORIGINS = [
